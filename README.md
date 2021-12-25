@@ -11,10 +11,12 @@ dev_dependencies:
     // ...
     build_runner:
     freezed:
+    json_serializable:
 
 dependencies:
     // ...
     freezed_annotation:
+    json_annotation:
 ```
 
 ## Features
@@ -32,5 +34,3 @@ dependencies:
 ![code gen](media/build.gif)
 
 ### Have build runner watch the freezed annotated classes and generate code on changes
-
-![code gen & watch](media/watch.gif)
