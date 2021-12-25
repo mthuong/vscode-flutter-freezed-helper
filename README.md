@@ -34,3 +34,7 @@ dependencies:
 ![code gen](media/build.gif)
 
 ### Have build runner watch the freezed annotated classes and generate code on changes
+
+## Credits
+
+The idea for this extension came from aksharpatel47's extension <https://github.com/aksharpatel47/vscode_flutter_helper>
