@@ -1,0 +1,62 @@
+{
+  "name": "vscode-flutter-freezed-helper",
+  "displayName": "Flutter freezed Helpers",
+  "description": "Helper utilities for flutter projects",
+  "version": "0.1.0",
+  "publisher": "mthuong",
+  "icon": "media/flutter.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mthuong/vscode-flutter-freezed-helper"
+  },
+  "engines": {
+    "vscode": "^1.62.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:flutterFreezedHelper.genModel",
+    "onCommand:flutterFreezedHelper.genModelWatch"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "flutterFreezedHelper.genModel",
+        "title": "Flutter Freezed Helper: Code gen for freezed Classes"
+      },
+      {
+        "command": "flutterFreezedHelper.genModelWatch",
+        "title": "Flutter Freezed Helper: Toggle Watch mode for Code gen for freezed Classes"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./dart.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.36.0",
+    "glob": "^7.1.4",
+    "mocha": "^6.1.4",
+    "typescript": "^3.3.1",
+    "tslint": "^5.12.1",
+    "vscode-test": "^1.0.0-next.0"
+  },
+  "dependencies": {
+    "tree-kill": "^1.2.1"
+  }
+}

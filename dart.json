@@ -1,0 +1,34 @@
+{
+  "Create a freezed Class": {
+    "prefix": "frc",
+    "body": [
+      "@freezed",
+      "class $1 with _$$1 {",
+      "",
+      "\tfactory $1() = _$1;",
+      "",
+      "\tfactory $1.fromJson(Map<String, dynamic> json) => _$$1FromJson(json);",
+      "\tMap<String, dynamic> toJson() => _$$1ToJson(this);",
+      "}"
+    ],
+    "description": "Creates a freezed Class inside a dartlang file. Useful for flutter and dart for web."
+  },
+  "Setup file for freezed annotation & Code Gen": {
+    "prefix": "frf",
+    "body": [
+      "import 'package:freezed_annotation/freezed_annotation.dart';",
+      "",
+      "part '$TM_FILENAME_BASE.freezed.dart';",
+      "part '$TM_FILENAME_BASE.g.dart';",
+      "",
+      "@freezed",
+      "class $1 with _$$1 {",
+      "",
+      "\tfactory $1() = _$1;",
+      "",
+      "\tfactory $1.fromJson(Map<String, dynamic> json) => _$$1FromJson(json);",
+      "}"
+    ],
+    "description": "Setup a file which will have freezed annotated classes."
+  }
+}
