@@ -2,6 +2,8 @@
 
 This extension currently helps you to easily write `freezed` annotated classes and allows you to run code generation for those classes. You can also watch the files so that code generation is faster.
 
+👉 <https://marketplace.visualstudio.com/items?itemName=mthuong.vscode-flutter-freezed-helper>
+
 ## Setup your flutter project for code generation for JSONSerializable annotations
 
 In your `pubspec.yaml` file add the following libraries in the `dev_dependencies` and `dependencies` section:
